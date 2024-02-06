@@ -1,0 +1,127 @@
+:root {
+  /* PRIMARY */
+  --Green: hsl(75, 94%, 57%);
+  /* NEUTRAL */
+  --grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+}
+@font-face {
+  font-family: Inter;
+  src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: var(--OffBlack);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#card{
+  font-family: Inter;
+  background-color: var(--DarkGrey);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em;
+  border-radius: 16px;
+    & img{
+      max-width: 25%;
+      border-radius: 50%;
+    }
+    & h2{
+      font-size: 14px;
+      color: var(--Green);
+    }
+}
+.avatar{
+  width: max-content;
+  margin: 1em 0;
+    & p{
+      margin: 1em 0;
+    };
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.5em; */
+  & :hover {
+    background-color: var(--Green);
+    color: black;
+  }
+}
+.button{
+  padding: 0.5em 0;
+  background-color: var(--grey);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* #card {
+  font-family: Inter;
+  background-color: var(--DarkGrey);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+    & img{
+      width: 10dvw;
+      border-radius: 50%;
+      margin: 2em 0 2em 0;
+    }
+    & p{
+    margin: 0 0 2em 0;
+    margin-bottom: 2em;
+    font-size: 14px;
+    }
+    & h1{
+      margin: 0 0 0.5em 0;
+    }
+    & h2{
+    color: var(--Green);
+    font-size: 14px;
+    margin: 0 0 2em 0;
+    }
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1dvh;
+    & :hover {
+      background-color: var(--Green);
+      color: black;
+    }
+  margin: 0 0 2em 0;
+}
+.button {
+  padding: 1dvh 8dvw;
+  width: 100%;
+  background-color: var(--grey);
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+} */
